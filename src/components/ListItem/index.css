@@ -1,0 +1,116 @@
+.list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #eee;
+}
+
+.item-image-area {
+  padding: 2rem;
+  display: grid;
+}
+
+.item-avatar {
+  height: 100%;
+  border-radius: 100%;
+  max-width: 100px;
+  max-height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  border: 1px solid #aaa;
+}
+
+.item-text-area {
+  padding: 1rem;
+  width: 100%;
+}
+
+.item-header-area {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-header-area h1 {
+  text-transform: uppercase;
+  font-family: RalewayBold;
+  margin: 0.2rem;
+}
+.item-text-area h4 {
+  font-family: RalewayLight;
+  color: #aaa;
+  margin: 0.1rem 1rem;
+}
+
+.item-grades-area {
+  margin-top: 1rem;
+}
+
+.item-grades-area h4 {
+  font-family: RalewayLight;
+  color: #aaa;
+  margin: 0.1rem 1rem;
+}
+
+.extensible-button {
+  color: #aaa;
+  font-size: 2rem;
+  font-weight: bolder;
+  border: 0px;
+  background: transparent;
+}
+.extensible-button:hover {
+  color: black;
+}
+
+
+.student-tag {
+  margin-left: 1rem;
+  font-family: RalewayLight;
+  font-size: large;
+  color: black;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #eee;
+  padding:  1rem 0rem 0.5rem;
+  border-radius: 10px 10px 0px 0px;
+  outline: none;
+}
+
+.student-tag:active,
+.student-tag:focus {
+  outline: none;
+  border-bottom: 2px solid #aaa;
+}
+
+.student-tag::placeholder {
+  font-family: RalewayLight;
+  font-size: large;
+  color: #aaa;
+}
+
+.item-tag-area {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 1rem 0rem;
+}
+
+.item-tag-item {
+  border: 0px;
+  padding: 0.5rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .list-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

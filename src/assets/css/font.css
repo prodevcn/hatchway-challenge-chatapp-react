@@ -1,0 +1,19 @@
+/* File: font.css */
+
+@font-face {
+  font-family: 'RalewayBold';
+  src: local('RalewayBold'),
+    url('../fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'RalewayRegular';
+  src: local('RalewayRegular'),
+    url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RalewayLight';
+  src: local('RalewayLight'),
+    url('../fonts/Raleway-Light.ttf');
+}

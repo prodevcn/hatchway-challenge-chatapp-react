@@ -1,0 +1,82 @@
+@import "font.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.container {
+  position: absolute;
+  margin: 5% 25%;
+  width: 50%;
+  height: 80%;
+  overflow: auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 3px 10px #aaa;
+}
+
+.container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1rem;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.search-bar-area {
+  position: fixed;
+  display: grid;
+  width: 50%;
+  border-radius: 10px 10px 0px 0px;
+  padding-top: 1rem;
+  background-color: white;
+}
+
+.search-bar {
+  position: relative;
+  font-family: RalewayLight;
+  font-size: large;
+  color: #aaa;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #eee;
+  padding:  1rem 0.5rem 0.5rem;
+  margin: 0 1rem 1rem 1rem;
+  outline: none;
+}
+
+.search-bar:active,
+.search-bar:focus {
+  outline: none;
+  border-bottom: 2px solid #aaa;
+}
+
+.search-bar::placeholder {
+  font-family: RalewayLight;
+  font-size: large;
+  color: #aaa;
+}
+
+.data-list-area {
+  display: grid;
+  margin-top: 10rem;
+  margin-left: 1rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 5% 10%;
+  }
+
+  .search-bar-area {
+    width: 80%;
+  }
+}
